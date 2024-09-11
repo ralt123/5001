@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Purchase History
+{% endblock %}
+
+{% block main %}
+    <h2>Purchase History</h2>
+    {% for item in won_items %}
+        <div class = "product_box2">
+            <a href="{{ url_for('itm_page', item_id=item["item_id"]) }}">
+                <img src="{{ url_for('static', filename='images/')}}{{item["item_id"]}}.jpg" onerror="this.src='{{ url_for('static', filename='images/handsomedan.jpg')}}'" class=clipped>
+                <h4> {{ item["item_name" ]}} </h4>
+            </a>         
+            </a>
+            <p> Contact the seller at</p>
+        </div>
+    {% endfor %}
+
+{% endblock %}

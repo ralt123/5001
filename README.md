@@ -1,2 +1,2 @@
-# 5001
-Auction Website. Uploaded work from my University Github.
+# 5001 Coursework
+Designed an auction website with Python, CSS, and HTML. 
